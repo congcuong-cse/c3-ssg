@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>c3-ssg — static site, ready to ship</title>
+  <meta name="description" content="A production-ready static site served by c3-ssg. Edit the public/ folder and deploy free." />
+  <meta name="theme-color" content="#0d1117" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="stylesheet" href="/styles.css" />
+  <meta property="og:title" content="c3-ssg" />
+  <meta property="og:description" content="Production-ready static hosting. Edit a folder, deploy free." />
+  <meta property="og:type" content="website" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">c3<span>-ssg</span></a>
+    <nav>
+      <a href="/about.html">About</a>
+      <a href="https://pages.github.com/" rel="noopener" target="_blank">Hosting</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">production-ready static hosting</p>
+      <h1>Edit a folder. Ship a site.</h1>
+      <p class="lede">
+        Everything in <code>public/</code> is your website. Run it locally with a
+        production-grade static server, then push to deploy automatically — for free.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="/about.html">How it works</a>
+        <a class="btn" href="https://github.com/" rel="noopener" target="_blank">Get the repo</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h3>⚡ Fast by default</h3>
+        <p>Brotli/gzip precompression, immutable caching for hashed assets, ETag revalidation, and HTTP range requests.</p>
+      </article>
+      <article class="card">
+        <h3>🔒 Safe by default</h3>
+        <p>Path-traversal and dotfile protection, security headers, and method restrictions — zero dependencies.</p>
+      </article>
+      <article class="card">
+        <h3>🚀 Deploy free</h3>
+        <p>A committed GitHub Actions workflow publishes to GitHub Pages on every push. Netlify, Vercel &amp; Docker configs included.</p>
+      </article>
+      <article class="card">
+        <h3>🛠 Great DX</h3>
+        <p><code>npm run dev</code> gives you live-reload. <code>npm run preview</code> builds and serves the exact production output.</p>
+      </article>
+    </section>
+
+    <section class="steps">
+      <h2>Three commands</h2>
+      <ol>
+        <li><code>npm run dev</code> — edit <code>public/</code> with live-reload</li>
+        <li><code>npm run build</code> — produce optimized <code>dist/</code></li>
+        <li><code>git push</code> — auto-deploy to your free host</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Served by <strong>c3-ssg</strong> · zero dependencies · <span id="year"></span></p>
+  </footer>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

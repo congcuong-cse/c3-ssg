@@ -1,0 +1,21 @@
+{
+  "name": "c3-ssg",
+  "version": "1.0.0",
+  "description": "Production-ready static site: serve a folder of HTML and assets, auto-deploy to a free host.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "node server.mjs --root public --watch --spa-off",
+    "build": "node scripts/build.mjs",
+    "start": "node server.mjs --root dist",
+    "preview": "npm run build && npm run start",
+    "test": "node --test"
+  },
+  "bin": {
+    "c3-ssg": "server.mjs"
+  },
+  "license": "MIT",
+  "private": true
+}

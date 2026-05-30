@@ -1,0 +1,12 @@
+{
+  "name": "c3-ssg",
+  "short_name": "c3-ssg",
+  "description": "Production-ready static site served by c3-ssg.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d1117",
+  "theme_color": "#0d1117",
+  "icons": [
+    { "src": "/assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

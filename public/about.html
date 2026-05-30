@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — c3-ssg</title>
+  <meta name="description" content="How the c3-ssg static site project is structured and deployed." />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">c3<span>-ssg</span></a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="https://pages.github.com/" rel="noopener" target="_blank">Hosting</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="prose">
+      <h1>How it works</h1>
+      <p>
+        <strong>c3-ssg</strong> treats a single folder as your whole project. Put HTML,
+        CSS, JavaScript, images, and fonts in <code>public/</code> and that is your site.
+      </p>
+
+      <h2>Project layout</h2>
+      <pre><code>public/        ← your site (edit this)
+  index.html
+  about.html
+  styles.css
+  app.js
+  assets/
+dist/          ← built output (generated)
+server.mjs     ← production static server
+scripts/build.mjs</code></pre>
+
+      <h2>Local development</h2>
+      <p>
+        <code>npm run dev</code> serves <code>public/</code> directly with live-reload, so
+        the browser refreshes as you edit. No build step needed while developing.
+      </p>
+
+      <h2>Production build</h2>
+      <p>
+        <code>npm run build</code> copies <code>public/</code> into <code>dist/</code>,
+        precompresses text assets to Brotli and gzip, and adds the files a host needs.
+        <code>npm run start</code> (or <code>npm run preview</code>) serves that output
+        exactly as production would.
+      </p>
+
+      <h2>Deployment</h2>
+      <p>
+        Push to GitHub and the included workflow builds and publishes to
+        <a href="https://pages.github.com/" rel="noopener" target="_blank">GitHub Pages</a>
+        automatically. Netlify, Vercel, and Docker configurations are included too — pick
+        whichever free host you prefer.
+      </p>
+
+      <p><a class="btn" href="/">← Back home</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Served by <strong>c3-ssg</strong> · zero dependencies</p>
+  </footer>
+  <script src="/app.js" defer></script>
+</body>
+</html>
