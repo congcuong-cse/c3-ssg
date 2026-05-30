@@ -2,6 +2,13 @@
 
 Production-ready static hosting. **Put your site in `public/`, run one command to serve it, push to deploy it free.** Zero runtime dependencies.
 
+## 🌐 Live
+
+- **Now (auto-deploys on every push, zero setup):** https://raw.githack.com/congcuong-cse/c3-ssg/main/public/index.html
+  — served by [githack](https://raw.githack.com), a free CDN for public GitHub repos.
+- **GitHub Pages (nicer URL, one-time enable):** https://congcuong-cse.github.io/c3-ssg/
+  — goes live once **Settings → Pages → Source → "GitHub Actions"** is enabled; the committed workflow then publishes on every push.
+
 ## Quick start
 
 ```bash
